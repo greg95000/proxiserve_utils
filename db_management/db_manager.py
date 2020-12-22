@@ -1,9 +1,11 @@
 from db_management.base import Base
-from models.users import User
-from models.consumptions import Consumption
 from db_management.singleton import SingletonMeta
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
+
+from models.users import User
+from models.consumptions import Consumption
+from models.apartments import Apartment
 
 
 class DatabaseManager(metaclass=SingletonMeta):
