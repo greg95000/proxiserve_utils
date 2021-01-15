@@ -5,4 +5,4 @@ from db_management.db_manager import DatabaseManager
 
 if __name__ == "__main__":
     db_manager = DatabaseManager()
-    db_manager.create_database()
+    db_manager.connect_to_database("sqlite", "./test.sqlite")
